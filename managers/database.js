@@ -3,8 +3,7 @@ const uri = process.env.MONGODB_URI;
 
 const config = {
     useNewUrlParser: true,
-    useUnifiedTopology: true,
-    autoReconnect: false
+    useUnifiedTopology: true
 }
 const client = new MongoClient(uri, config);
 let db;
